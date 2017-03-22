@@ -1,0 +1,10 @@
+<h1>Login and Registration Page</h1>
+  <div ng-controller='loginController'>
+    <p style='color:red;' ng-repeat="error in errors track by $index">
+      {{error}}
+    </p>
+    <form ng-submit="loginFunction()">
+      <input type="text" ng-model="loginRegFormInput.name" value="Enter Username">
+      <input type="submit" value="Login or Register">
+    </form>
+  </div>
