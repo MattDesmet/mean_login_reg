@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "./node_modules")));
 // app.set('views', path.join(__dirname, './client/views'));
 // app.set('view engine', 'ejs');
 
-require('./server/config/mongoose.js');
+// require('./server/config/mongoose.js');
 require('./server/config/routes.js')(app);
 
 app.listen(PORT, function(){

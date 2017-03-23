@@ -11,5 +11,8 @@ $routeProvider
     redirectTo: '/login'
   });
 });
+
+
+
 console.log('app.js is working');
 // console.log(app);

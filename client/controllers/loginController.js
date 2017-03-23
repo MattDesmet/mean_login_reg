@@ -10,11 +10,19 @@ app.controller('loginController', function($scope,loginFactory) {
     else if ($scope.loginRegFormInput.name.length < 3) {
       $scope.errors.push('Name must be longer than 3 characters long')
     }else{
-      console.log('no errors!');
-      console.log($scope.loginRegFormInput)
-      console.log(loginFactory);
+
+      // console.log('no errors!');
+      console.log('This is the user data in controller:',$scope.loginRegFormInput)
+      loginFactory.login($scope.loginRegFormInput)
+      // console.log(loginFactory);
     }
   }
 });
+
+
+
+
+
+
 
 console.log('controller is working');
